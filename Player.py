@@ -16,12 +16,16 @@ class Player:
         turtle.listen()
         turtle.onkey(self.moveRight, "Right")
         turtle.onkey(self.moveLeft, "Left")
-        
+
     def moveRight(self):
         player = self.player
         x = self.player.xcor() + self.PlayerSpeed
+        if(x > 280):
+            x = 280
         player.setx(x)
     def moveLeft(self):
         player = self.player
         x = self.player.xcor() - self.PlayerSpeed
+        if(x < -280):
+            x = -280
         player.setx(x)
