@@ -15,7 +15,6 @@ class Border:
         for size in range(4):
             border.fd(600)
             border.lt(90)
-
         #Creates the score text
         scoretext = turtle.Turtle()
         scoretext.color("white")
@@ -27,4 +26,5 @@ class Border:
         self.scoretext = scoretext
 
     def updateScore(self, score):
-        self.scoretext = "Score: " + score
+        #self.scoretext = "Score: " + score
+        print("HOW DID YOU GET HERE?!")
